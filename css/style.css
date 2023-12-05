@@ -1,5 +1,5 @@
 #grid_index {
-    display: grid; 
+    display:grid;
     min-height: 100vh;
     gap: 0.5vw;
     grid-template-columns: 14vw 70vw 14vw;
@@ -28,14 +28,33 @@
     't1 ss4 t2'
     'ft ft ft';
 }
+#grid_gallery {
+    display: grid;
+    min-height: 100vh; 
+    gap: 0.5vw; 
+    grid-template-columns: 14vw 70vw 14vw;
+    grid-template-rows: 30vh 10vh 40vh 40vh 40vh 40vh 10vh 30vh 20vh;
+    grid-template-areas: 
+    'hd hd hd'
+    'nv nv nv'
+    't1 gs1 t2'
+    't1 gs2 t2'
+    't1 gs3 t2'
+    't1 gs4 t2'
+    't1 ss3 t2'
+    't1 gs5 t2'
+    'ft ft ft';
+}
 body {
     overflow-x: hidden;
-}
-section {    
+    font-family: 'Oswald', sans-serif;
 }
 header {
     grid-area: hd;
     background-color: #c0392b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav {
     grid-area: nv;
@@ -56,22 +75,15 @@ nav {
 #s4 {
     grid-area: s4; 
 }
-.tom1 {
+#tom1 {
     grid-area: t1;
 }
-.tom2 {
+#tom2 {
     grid-area: t2;
 }
 footer {
     grid-area: ft; 
     background-color: #c0392b;    
-}
-a {
-    color:black; 
-    text-decoration: none;
-}
-a:hover {
-   color: #c0392b;  
 }
 #ss1 {
     grid-area: ss1;
@@ -84,4 +96,38 @@ a:hover {
 }
 #ss4 {
     grid-area: ss4;
+}
+#gs1 {
+    grid-area: gs1;
+}
+#gs2 {
+    grid-area: gs2;
+}
+#gs3 {
+    grid-area: gs3;
+}
+#gs4 {
+    grid-area: gs4;
+}
+#gs5 {
+    grid-area: gs5;
+}
+a {
+    color:black; 
+    text-decoration: none;
+}
+a:hover {
+    color: #c0392b;  
+}
+h2,
+h3 {
+    font-size: 4em;
+    font-family: 'Courgette', cursive;
+}
+h1 {
+    font-size: 6em;
+    font-family: 'Courgette', cursive;
+}
+p {
+    font-size: 2em;
 }
