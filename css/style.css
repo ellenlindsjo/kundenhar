@@ -3,7 +3,7 @@
     min-height: 100vh;
     gap: 0.5vw;
     grid-template-columns: 14vw 70vw 14vw;
-    grid-template-rows: 30vh 10vh 50vh 50vh 50vh 40vh 20vh;
+    grid-template-rows: 30vh 10vh auto auto 50vh 40vh 20vh;
     grid-template-areas: 
     'hd hd hd'
     'nv nv nv'
@@ -18,7 +18,7 @@
     min-height: 100vh;
     gap: 0.5vw;
     grid-template-columns: 14vw 70vw 14vw;
-    grid-template-rows: 30vh 10vh 40vh 170vh 15vh 30vh 20vh;
+    grid-template-rows: 30vh 10vh auto 170vh 15vh 30vh 20vh;
     grid-template-areas: 
     'hd hd hd'
     'nv nv nv'
@@ -146,7 +146,7 @@ h4:hover {
     color: #c0392b;
 }
 p {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 .cards {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -175,4 +175,15 @@ p {
 }
 .load:hover {
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+}
+.info {
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+.textinfo {
+    padding: 20px;
+}
+.imginfo {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
