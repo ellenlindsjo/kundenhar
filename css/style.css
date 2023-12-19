@@ -48,6 +48,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Oswald', sans-serif;
+    margin: 0px;
 }
 header {
     grid-area: hd;
@@ -90,7 +91,10 @@ nav {
 }
 footer {
     grid-area: ft; 
-    background-color: #c0392b;    
+    background-color: #c0392b;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #ss1 {
     grid-area: ss1;
@@ -150,8 +154,9 @@ h3 {
     font-family: 'Courgette', cursive;
 }
 h1 {
-    font-size: 6em;
+    font-size: 10em;
     font-family: 'Courgette', cursive;
+    color: white;
 }
 h4 {
     font-size: 2em;
@@ -220,9 +225,11 @@ p {
     color:black; 
 }
 .logo {
-    font-size: 2.5em;
+    font-size: 4em;
     font-family: 'Courgette', cursive;
     display: flex; 
-    justify-content: center;
-    align-items: center;
+}
+.foot {
+    margin: 0px;
+    color: white;
 }
